@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body style="background-color: #ddd;">
+  <!-- header & Botton -->
+  <div class="sticky-top pe-4 ps-4 p-2" style="background-color: #ddd;">
+    <div class=" d-flex justify-content-between align-items-center">
+      <h5 class="fw-bold">Create new customer</h5>
+      <div>
+        <button type="button" class="btn btn-secondary btn-sm">Cancel</button>
+        <button type="button" class="btn btn-primary btn-sm">Save</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="right-section col-lg-8">
+        <!-- start basic inforation -->
+        <div class="basic-information bg-light  p-4 rounded shadow">
+          <h5 class="mb-3 fw-bold">Basic Information</h5>
+          <div class="row mb-3 mb-md-0">
+            <div class="col-md mb-3">
+              <label for="fname" class="form-label">First Name</label>
+              <input type="text" id="fname" class="form-control">
+            </div>
+            <div class="col-md">
+              <label class="form-label" for="lname">Last Name</label>
+              <input class="form-control" type="text" id="lname">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md mb-3 mb-md-0">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-control" type="email" id="email">
+            </div>
+            <div class="col-md">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input class="form-control" type="text" id="phone">
+            </div>
+          </div>
+        </div>
+        <!-- end basic inforation -->
+
+        <!-- start address -->
+        <div class="basic-information bg-light  p-4 mt-4 rounded mb-4 shadow">
+          <h5 class="mb-3 fw-bold">Address</h5>
+          <div class="col mb-4">
+            <label for="fromOne" class="form-label">Address Line 1</label>
+            <input type="text" id="fromOne" class="form-control">
+          </div>
+          <div class="col mb-4">
+            <label class="form-label" for="fromTwo">Address Line 2</label>
+            <input class="form-control" type="text" id="fromTwo">
+          </div>
+          <div class="row">
+            <div class="col mb-4">
+              <label for="Country" class="form-label">Country</label>
+              <input type="text" id="Country" class="form-control">
+            </div>
+            <div class="col">
+              <label class="form-label" for="State">State</label>
+              <input class="form-control" type="text" id="State">
+            </div>
+          </div>
+          <div class="row pb-1">
+            <div class="col">
+              <label class="form-label" for="City">City</label>
+              <input class="form-control" type="email" id="City">
+            </div>
+            <div class="col">
+              <label class="form-label" for="ZIP">ZIP code</label>
+              <input class="form-control" type="text" id="ZIP">
+            </div>
+          </div>
+        </div>
+        <!-- end address -->
+      </div>
+
+
+      <div class="left-section col-lg-4">
+        <!-- start status -->
+        <div class="status p-3 bg-light rounded mb-4 shadow">
+          <h6 class="mb-3 fw-bold">Status</h6>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <!-- end status -->
+
+        <!-- start avatar -->
+        <div class="avatar p-3 bg-light rounded mb-4 shadow">
+          <h6 class="mb-3 fw-bold">Avatar</h6>
+          <input type="file" class="form-control" id="inputGroupFile02">
+        </div>
+        <!-- end avatar -->
+
+        <!-- start notes -->
+        <div class="notes p-3 bg-light rounded mb-4 shadow">
+          <h6 for="exampleFormControlTextarea1" class="form-label mb-3 fw-bold">Notes</h6>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <!-- end notes -->
+
+        <!-- start notfication-settings -->
+        <div class="notfication-settings bg-light p-3 mb-5 rounded shadow">
+          <h5 class="mb-1 fw-bold fs-6">Notfication Settings</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div class="form-check form-switch d-flex flex-row-reverse justify-content-between p-0">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label fw-bold mb-1" for="flexSwitchCheckDefault">New and updates</label>
+              </div>
+              <p class="m-0 p-0">News about product and feature updates</p>
+            </li>
+            <li class="list-group-item">
+              <div
+                class="form-check form-switch d-flex flex-row-reverse justify-content-between align-items-center p-0">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
+                <label class="form-check-label fw-bold me-3" for="flexSwitchCheckDefault">Tips ans tutorials</label>
+              </div>
+              <p class="m-0 p-0">Tips on getting more out the platform.</p>
+            </li>
+            <li class="list-group-item">
+              <div class="form-check form-switch d-flex flex-row-reverse justify-content-between p-0">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label fw-bold" for="flexSwitchCheckDefault">User research</label>
+              </div>
+              <p class="p-0 m-0">Get involved in our beta testing program</p>
+            </li>
+          </ul>
+        </div>
+        <!-- end notfication-settings -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
